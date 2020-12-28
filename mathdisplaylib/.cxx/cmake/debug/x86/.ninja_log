@@ -1,4 +1,0 @@
-# ninja log v5
-0	87	0	build.ninja	31fead1dd928d977
-0	526	0	CMakeFiles/main.dir/freetype_jni.cpp.o	5cc567cb833c4648
-527	566	0	/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/debug/obj/x86/libmain.so	87a53e86206d457b

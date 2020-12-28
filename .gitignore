@@ -2,3 +2,6 @@
 local.properties
 .gradle
 .idea
+.cdep
+.cxx
+build
