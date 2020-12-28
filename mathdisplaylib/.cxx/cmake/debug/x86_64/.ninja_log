@@ -1,20 +1,8 @@
 # ninja log v5
-0	460	1609143535	CMakeFiles/main.dir/freetype_jni.cpp.o	5a70ff170b0b1634
-461	493	1609143535	/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/debug/obj/x86_64/libmain.so	4abed3a115ed400b
-0	91	1609143632	build.ninja	8e99452d09fcd14b
+1	604	1609148004	CMakeFiles/main.dir/freetype_jni.cpp.o	5a70ff170b0b1634
+605	652	1609148004	/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/debug/obj/x86_64/libmain.so	4abed3a115ed400b
+0	87	1609148033	build.ninja	8e99452d09fcd14b
 0	5	0	clean	f242344a5ed16a62
-0	79	1609143637	build.ninja	8e99452d09fcd14b
-0	5	0	clean	f242344a5ed16a62
-1	462	1609143640	CMakeFiles/main.dir/freetype_jni.cpp.o	5a70ff170b0b1634
-462	491	1609143640	/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/debug/obj/x86_64/libmain.so	4abed3a115ed400b
-0	78	1609143675	build.ninja	8e99452d09fcd14b
-0	105	1609145097	build.ninja	8e99452d09fcd14b
-0	82	1609145124	build.ninja	8e99452d09fcd14b
-0	5	0	clean	f242344a5ed16a62
-1	516	1609145128	CMakeFiles/main.dir/freetype_jni.cpp.o	5a70ff170b0b1634
-516	550	1609145128	/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/debug/obj/x86_64/libmain.so	4abed3a115ed400b
-0	83	1609145179	build.ninja	8e99452d09fcd14b
-0	91	1609146144	build.ninja	8e99452d09fcd14b
-0	86	1609146167	build.ninja	8e99452d09fcd14b
-0	88	1609146354	build.ninja	8e99452d09fcd14b
-0	98	1609146396	build.ninja	8e99452d09fcd14b
+1	85	1609148036	build.ninja	8e99452d09fcd14b
+2	541	1609148037	CMakeFiles/main.dir/freetype_jni.cpp.o	5a70ff170b0b1634
+541	579	1609148037	/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/debug/obj/x86_64/libmain.so	4abed3a115ed400b

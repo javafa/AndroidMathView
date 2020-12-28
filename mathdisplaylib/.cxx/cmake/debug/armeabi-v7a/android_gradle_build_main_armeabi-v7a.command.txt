@@ -1,7 +1,0 @@
-Executable : /Users/donho/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
-arguments : 
--C
-/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/armeabi-v7a
-main
-jvmArgs : 
-

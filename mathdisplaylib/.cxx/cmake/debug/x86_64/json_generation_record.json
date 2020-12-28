@@ -43,6 +43,12 @@
   },
   {
     "level": "INFO",
+    "message": "  - /Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
+    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
+    "tag": "debug|x86_64"
+  },
+  {
+    "level": "INFO",
     "message": "  - /Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cdep/modules/cdep-dependencies-config.cmake",
     "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
     "tag": "debug|x86_64"
@@ -188,12 +194,6 @@
   {
     "level": "INFO",
     "message": "write build output /Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/x86_64/build_output.txt",
-    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
-    "tag": "debug|x86_64"
-  },
-  {
-    "level": "INFO",
-    "message": "deleted unexpected build output /Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/debug/obj/x86_64/libc++_shared.so in incremental regenerate",
     "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
     "tag": "debug|x86_64"
   },
