@@ -2,12 +2,12 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'com.github.dcendents.android-maven'
 
+// for jitpack
 group='com.github.javafa'
+version='1.0-SNAPSHOT'
 
 android {
     compileSdkVersion 29
-
-
 
     defaultConfig {
         minSdkVersion 19
