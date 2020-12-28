@@ -11,7 +11,7 @@ Installation from the command line
 ----------------------------------
 
 ```
-git clone https://github.com/javafa/AndroidMath.git
+git clone https://github.com/javafa/AndroidMathView.git
 
 cd AndroidMath
 ./gradlew installDebug
@@ -25,7 +25,7 @@ CDep pulls in the freetype dependency.
 
 
 ```
-git clone https://github.com/javafa/AndroidMath.git
+git clone https://github.com/javafa/AndroidMathView.git
 cd AndroidMath/mathdisplaylib
 ./cdep 
 ```
@@ -36,7 +36,7 @@ Open the project in Android Studio
 Using library in your app
 -------------------------
 
-* [HelloAndroidMath](https://github.com/gregcockroft/HelloAndroidMath) For a complete simple project
+* [HelloAndroidMath](https://github.com/javafa/AndroidMathView) For a complete simple project
 
 This is using jitpack.io
 Add below lines to root's build.gradle
@@ -54,7 +54,7 @@ Add below lines to apps's build.gradle
 
 ```groovy
 dependencies {
-	        implementation 'com.github.javafa:AndroidMath:ALPHA'
+	        implementation 'com.github.javafa:AndroidMathView:1.0.12'
 	}
 	
 ```
