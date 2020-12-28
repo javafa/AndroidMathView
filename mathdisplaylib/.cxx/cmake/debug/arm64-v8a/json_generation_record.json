@@ -25,55 +25,7 @@
   },
   {
     "level": "INFO",
-    "message": "rebuilding JSON /Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/arm64-v8a/android_gradle_build.json due to:",
-    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "- command changed from previous, will remove stale json folder",
-    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "removing stale contents from \u0027/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/arm64-v8a\u0027",
-    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "created folder \u0027/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/arm64-v8a\u0027",
-    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "executing cmake Executable : /Users/donho/Library/Android/sdk/cmake/3.6.4111459/bin/cmake\narguments : \n-H/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp\n-DCMAKE_FIND_ROOT_PATH\u003d/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/prefab/arm64-v8a/prefab\n-DCMAKE_BUILD_TYPE\u003dDebug\n-DCMAKE_TOOLCHAIN_FILE\u003d/Users/donho/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake\n-DANDROID_ABI\u003darm64-v8a\n-DANDROID_NDK\u003d/Users/donho/Library/Android/sdk/ndk/21.1.6352462\n-DANDROID_PLATFORM\u003dandroid-19\n-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\n-DCMAKE_ANDROID_NDK\u003d/Users/donho/Library/Android/sdk/ndk/21.1.6352462\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/debug/obj/arm64-v8a\n-DCMAKE_MAKE_PROGRAM\u003d/Users/donho/Library/Android/sdk/cmake/3.6.4111459/bin/ninja\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d19\n-Dcdep-dependencies_DIR\u003d../../../.cdep/modules\n-DANDROID_STL\u003dc++_shared\n-B/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/arm64-v8a\n-GNinja\njvmArgs : \n\n",
-    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "Executable : /Users/donho/Library/Android/sdk/cmake/3.6.4111459/bin/cmake\narguments : \n-H/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp\n-DCMAKE_FIND_ROOT_PATH\u003d/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/prefab/arm64-v8a/prefab\n-DCMAKE_BUILD_TYPE\u003dDebug\n-DCMAKE_TOOLCHAIN_FILE\u003d/Users/donho/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake\n-DANDROID_ABI\u003darm64-v8a\n-DANDROID_NDK\u003d/Users/donho/Library/Android/sdk/ndk/21.1.6352462\n-DANDROID_PLATFORM\u003dandroid-19\n-DCMAKE_ANDROID_ARCH_ABI\u003darm64-v8a\n-DCMAKE_ANDROID_NDK\u003d/Users/donho/Library/Android/sdk/ndk/21.1.6352462\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/debug/obj/arm64-v8a\n-DCMAKE_MAKE_PROGRAM\u003d/Users/donho/Library/Android/sdk/cmake/3.6.4111459/bin/ninja\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d19\n-Dcdep-dependencies_DIR\u003d../../../.cdep/modules\n-DANDROID_STL\u003dc++_shared\n-B/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/arm64-v8a\n-GNinja\njvmArgs : \n\n",
-    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "done executing cmake",
-    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "write build output /Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/arm64-v8a/build_output.txt",
-    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
-    "tag": "debug|arm64-v8a"
-  },
-  {
-    "level": "INFO",
-    "message": "write command file /Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/arm64-v8a/build_command.txt",
+    "message": "JSON \u0027/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/arm64-v8a/android_gradle_build.json\u0027 was up-to-date",
     "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
     "tag": "debug|arm64-v8a"
   },
