@@ -1,4 +1,4 @@
-                Executable : /Users/donho/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake
+                Executable : /Users/donho/Library/Android/sdk/cmake/3.6.4111459/bin/cmake
 arguments : 
 -H/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp
 -DCMAKE_FIND_ROOT_PATH=/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/prefab/arm64-v8a/prefab
@@ -11,7 +11,7 @@ arguments :
 -DCMAKE_ANDROID_NDK=/Users/donho/Library/Android/sdk/ndk/21.1.6352462
 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
 -DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/debug/obj/arm64-v8a
--DCMAKE_MAKE_PROGRAM=/Users/donho/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
+-DCMAKE_MAKE_PROGRAM=/Users/donho/Library/Android/sdk/cmake/3.6.4111459/bin/ninja
 -DCMAKE_SYSTEM_NAME=Android
 -DCMAKE_SYSTEM_VERSION=19
 -Dcdep-dependencies_DIR=../../../.cdep/modules

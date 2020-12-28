@@ -7,31 +7,73 @@
   },
   {
     "level": "INFO",
-    "message": "No CMake version was specified in build.gradle. Using default version 3.10.2.",
-    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
-    "tag": "release|x86_64"
-  },
-  {
-    "level": "INFO",
     "message": "Trying to locate CMake in local SDK repository.",
     "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
     "tag": "release|x86_64"
   },
   {
     "level": "INFO",
-    "message": "- CMake found in SDK at \u0027/Users/donho/Library/Android/sdk/cmake/3.10.2.4988404\u0027 had version \u00273.10.2\u0027",
+    "message": "CMake \u00273.10.2\u0027 found in SDK did not match requested version \u00273.6.0\u0027.",
     "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
     "tag": "release|x86_64"
   },
   {
     "level": "INFO",
-    "message": "CMake \u00273.6.0\u0027 found in SDK did not match requested version \u00273.10.2\u0027.",
+    "message": "- CMake found in SDK at \u0027/Users/donho/Library/Android/sdk/cmake/3.6.4111459\u0027 had version \u00273.6.0\u0027",
     "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
     "tag": "release|x86_64"
   },
   {
     "level": "INFO",
-    "message": "JSON \u0027/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/release/x86_64/android_gradle_build.json\u0027 was up-to-date",
+    "message": "rebuilding JSON /Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/release/x86_64/android_gradle_build.json due to:",
+    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "- command changed from previous, will remove stale json folder",
+    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "removing stale contents from \u0027/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/release/x86_64\u0027",
+    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "created folder \u0027/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/release/x86_64\u0027",
+    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "executing cmake Executable : /Users/donho/Library/Android/sdk/cmake/3.6.4111459/bin/cmake\narguments : \n-H/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp\n-DCMAKE_FIND_ROOT_PATH\u003d/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/release/prefab/x86_64/prefab\n-DCMAKE_BUILD_TYPE\u003dRelease\n-DCMAKE_TOOLCHAIN_FILE\u003d/Users/donho/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake\n-DANDROID_ABI\u003dx86_64\n-DANDROID_NDK\u003d/Users/donho/Library/Android/sdk/ndk/21.1.6352462\n-DANDROID_PLATFORM\u003dandroid-19\n-DCMAKE_ANDROID_ARCH_ABI\u003dx86_64\n-DCMAKE_ANDROID_NDK\u003d/Users/donho/Library/Android/sdk/ndk/21.1.6352462\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/release/obj/x86_64\n-DCMAKE_MAKE_PROGRAM\u003d/Users/donho/Library/Android/sdk/cmake/3.6.4111459/bin/ninja\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d19\n-Dcdep-dependencies_DIR\u003d../../../.cdep/modules\n-DANDROID_STL\u003dc++_shared\n-B/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/release/x86_64\n-GNinja\njvmArgs : \n\n",
+    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "Executable : /Users/donho/Library/Android/sdk/cmake/3.6.4111459/bin/cmake\narguments : \n-H/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp\n-DCMAKE_FIND_ROOT_PATH\u003d/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/release/prefab/x86_64/prefab\n-DCMAKE_BUILD_TYPE\u003dRelease\n-DCMAKE_TOOLCHAIN_FILE\u003d/Users/donho/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake\n-DANDROID_ABI\u003dx86_64\n-DANDROID_NDK\u003d/Users/donho/Library/Android/sdk/ndk/21.1.6352462\n-DANDROID_PLATFORM\u003dandroid-19\n-DCMAKE_ANDROID_ARCH_ABI\u003dx86_64\n-DCMAKE_ANDROID_NDK\u003d/Users/donho/Library/Android/sdk/ndk/21.1.6352462\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/release/obj/x86_64\n-DCMAKE_MAKE_PROGRAM\u003d/Users/donho/Library/Android/sdk/cmake/3.6.4111459/bin/ninja\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_SYSTEM_VERSION\u003d19\n-Dcdep-dependencies_DIR\u003d../../../.cdep/modules\n-DANDROID_STL\u003dc++_shared\n-B/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/release/x86_64\n-GNinja\njvmArgs : \n\n",
+    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "done executing cmake",
+    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "write build output /Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/release/x86_64/build_output.txt",
+    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
+    "tag": "release|x86_64"
+  },
+  {
+    "level": "INFO",
+    "message": "write command file /Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/release/x86_64/build_command.txt",
     "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
     "tag": "release|x86_64"
   },

@@ -20,6 +20,7 @@ android {
         multiDexEnabled true
         externalNativeBuild {
             cmake {
+                version "3.6.0"
                 arguments "-Dcdep-dependencies_DIR=../../../.cdep/modules"
                 arguments "-DANDROID_STL=c++_shared"
             }
@@ -41,6 +42,7 @@ android {
 
     externalNativeBuild {
         cmake {
+            version "3.6.0"
             path 'src/main/cpp/CMakeLists.txt'
         }
     }
