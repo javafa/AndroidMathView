@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/AndroidMath.iml" filepath="$PROJECT_DIR$/.idea/AndroidMath.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mathdisplaylib/AndroidMath.mathdisplaylib.iml" filepath="$PROJECT_DIR$/.idea/modules/mathdisplaylib/AndroidMath.mathdisplaylib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sampleapp/AndroidMath.sampleapp.iml" filepath="$PROJECT_DIR$/.idea/modules/sampleapp/AndroidMath.sampleapp.iml" />
+    </modules>
+  </component>
+</project>

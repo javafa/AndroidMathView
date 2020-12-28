@@ -1,0 +1,44 @@
+{
+  "stringTable": {
+    "0": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/release/arm64-v8a",
+    "1": "--target=aarch64-none-linux-android21 --gcc-toolchain=/Users/donho/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/donho/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dmain_EXPORTS -I/Users/donho/.cdep/exploded/com.github.jomof/freetype/2.6.2-rev14/headers.zip/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O2 -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
+    "/Users/donho/Library/Android/sdk/ndk/21.1.6352462/build/cmake/android.toolchain.cmake",
+    "/Users/donho/Library/Android/sdk/ndk/21.1.6352462/build/cmake/platforms.cmake",
+    "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cdep/modules/cdep-dependencies-config.cmake"
+  ],
+  "cleanCommands": [
+    "/Users/donho/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/release/arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "/Users/donho/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/release/arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "main-Release-arm64-v8a": {
+      "buildCommand": "/Users/donho/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja -C \"/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/release/arm64-v8a\" main",
+      "buildType": "release",
+      "toolchain": "3118420051",
+      "abi": "arm64-v8a",
+      "artifactName": "main",
+      "files": [
+        {
+          "src": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/freetype_jni.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/release/obj/arm64-v8a/libmain.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "3118420051": {
+      "cppCompilerExecutable": "/Users/donho/Library/Android/sdk/ndk/21.1.6352462/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}
