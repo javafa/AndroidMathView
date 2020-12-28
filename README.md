@@ -1,6 +1,6 @@
 [![](https://jitpack.io/v/javafa/AndroidMath.svg)](https://jitpack.io/#javafa/AndroidMath)
 
-# AndroidMath
+# AndroidMathView
 - This Project's cloned from https://github.com/gregcockroft/AndroidMath
 - Just upgraded the latest gradle version
 
