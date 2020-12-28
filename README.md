@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/gregcockroft/AndroidMath.svg)](https://jitpack.io/#gregcockroft/AndroidMath)
+[![](https://jitpack.io/v/javafa/AndroidMath.svg)](https://jitpack.io/#javafa/AndroidMath)
 
 # AndroidMath
 - This Project's cloned from https://github.com/gregcockroft/AndroidMath
