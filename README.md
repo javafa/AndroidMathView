@@ -1,7 +1,7 @@
 [![](https://jitpack.io/v/gregcockroft/AndroidMath.svg)](https://jitpack.io/#gregcockroft/AndroidMath)
 
 # AndroidMath
-
+- This Project's cloned from https://github.com/gregcockroft/AndroidMath
 - [x] Rendering of LaTeX Math inside of an Android View
 - [x] No dependency on WebView
 - [x] Easy to use.
