@@ -222,11 +222,11 @@ Project_BINARY_DIR:STATIC=/Users/donho/workspaces/mathflat/android/AndroidMath/m
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp
 
-//The directory containing a CMake configuration file for cdep-dependencies.
-cdep-dependencies_DIR:PATH=cdep-dependencies_DIR-NOTFOUND
+//No help, variable specified on the command line.
+cdep-dependencies_DIR:UNINITIALIZED=../../../.cdep/modules
 
-//Dependencies for target
-main_LIB_DEPENDS:STATIC=
+//Dependencies for the target
+main_LIB_DEPENDS:STATIC=general;/Users/donho/.cdep/exploded/com.github.jomof/freetype/2.6.2-rev14/freetype-android-cxx-platform-12-x86.zip/lib/x86/libfreetype.a;general;log;general;android;
 
 
 ########################
