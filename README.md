@@ -36,7 +36,7 @@ Open the project in Android Studio
 Using library in your app
 -------------------------
 
-* [HelloAndroidMath](https://github.com/javafa/AndroidMathView/sampleapp) For a complete simple project
+* [Sample App](https://github.com/javafa/AndroidMathView/sampleapp) For a complete simple project
 
 This is using jitpack.io
 Add below lines to root's build.gradle
