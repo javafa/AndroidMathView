@@ -207,7 +207,7 @@ class MTMathView @JvmOverloads constructor(
         paint.color = Color.RED
         paint.textSize = convertDpToPixel(errorFontSize)
         val r = errorBounds()
-        canvas.drawText(lastError.errordesc, 0.0f, -r.top.toFloat(), paint)
+        canvas.drawText(lastError.errordesc?:"", 0.0f, -r.top.toFloat(), paint)
         return true
     }
 

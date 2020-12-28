@@ -2,7 +2,7 @@
 
 # AndroidMath
 - This Project's cloned from https://github.com/gregcockroft/AndroidMath
-- Just upgraded the gradle version
+- Just upgraded the latest gradle version
 
 <img src="./img/phonescreen.png" width="320">
 
@@ -11,7 +11,7 @@ Installation from the command line
 ----------------------------------
 
 ```
-git clone https://github.com/gregcockroft/AndroidMath.git
+git clone https://github.com/javafa/AndroidMath.git
 
 cd AndroidMath
 ./gradlew installDebug
@@ -25,7 +25,7 @@ CDep pulls in the freetype dependency.
 
 
 ```
-git clone https://github.com/gregcockroft/AndroidMath.git
+git clone https://github.com/javafa/AndroidMath.git
 cd AndroidMath/mathdisplaylib
 ./cdep 
 ```
@@ -54,7 +54,7 @@ Add below lines to apps's build.gradle
 
 ```groovy
 dependencies {
-	        implementation 'com.github.gregcockroft:AndroidMath:ALPHA'
+	        implementation 'com.github.javafa:AndroidMath:ALPHA'
 	}
 	
 ```

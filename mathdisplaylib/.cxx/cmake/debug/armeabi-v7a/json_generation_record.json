@@ -193,12 +193,6 @@
   },
   {
     "level": "INFO",
-    "message": "deleted unexpected build output /Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/debug/obj/armeabi-v7a/libc++_shared.so in incremental regenerate",
-    "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
-    "tag": "debug|armeabi-v7a"
-  },
-  {
-    "level": "INFO",
     "message": "write command file /Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/armeabi-v7a/build_command.txt",
     "file": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/src/main/cpp/CMakeLists.txt",
     "tag": "debug|armeabi-v7a"

@@ -180,6 +180,7 @@
       "project": {
         "compilerSettingsCacheFolder": "/Users/donho/workspaces/mathflat/android/AndroidMath/.cxx",
         "cxxFolder": "/Users/donho/workspaces/mathflat/android/AndroidMath/.cxx",
+        "ideBuildTargetAbi": "x86_64,x86",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isNativeCompilerSettingsCacheEnabled": false,
@@ -203,9 +204,6 @@
     "objFolder": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/debug/obj",
     "variantName": "debug",
     "validAbiList": [
-      "ARMEABI_V7A",
-      "ARM64_V8A",
-      "X86",
       "X86_64"
     ],
     "prefabDirectory": "/Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/prefab",
