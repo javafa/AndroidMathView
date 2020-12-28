@@ -2,7 +2,7 @@
 
 # AndroidMath
 - This Project's cloned from https://github.com/gregcockroft/AndroidMath
-- [x] just upgraded the recent version of gradle
+- Just upgraded the gradle version
 
 <img src="./img/phonescreen.png" width="320">
 
