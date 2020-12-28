@@ -3,5 +3,4 @@ ninja: Entering directory `/Users/donho/workspaces/mathflat/android/AndroidMath/
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/.cxx/cmake/debug/x86_64
-[1/2] Building CXX object CMakeFiles/main.dir/freetype_jni.cpp.o
-[2/2] Linking CXX shared library /Users/donho/workspaces/mathflat/android/AndroidMath/mathdisplaylib/build/intermediates/cmake/debug/obj/x86_64/libmain.so
+ninja: no work to do.
