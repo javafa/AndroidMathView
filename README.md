@@ -2,9 +2,7 @@
 
 # AndroidMath
 - This Project's cloned from https://github.com/gregcockroft/AndroidMath
-- [x] Rendering of LaTeX Math inside of an Android View
-- [x] No dependency on WebView
-- [x] Easy to use.
+- [x] just upgraded the recent version of gradle
 
 <img src="./img/phonescreen.png" width="320">
 
