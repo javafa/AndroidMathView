@@ -98,7 +98,7 @@ dependencies {
 |------|------|-------------
 | latex | String | "\log_b(x) = \frac{\log_a(x)}{\log_a(b)}"   
 | fontColor | Color | @color/colorId   
-| fontSize | Float | 11.0f   
+| fontSize | Float | 11.0   
 | fontType | Enum | LatinModernMath, TeXGyreTermes, XITSMath   
 | textAlignment | Enum | left, center, right   
 
