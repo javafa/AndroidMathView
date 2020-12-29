@@ -118,12 +118,6 @@ dependencies {
 	
 ```
 
-
-
-#### API
-Look at [MTMathView](https://rawgit.com/gregcockroft/AndroidMath/master/mathdisplaylib/doc/com.agog.mathdisplay/-m-t-math-view/index.html)
-This is the central access class.
-
 #### Credits:
 
 
