@@ -15,7 +15,7 @@ import android.graphics.*
 
 /** View subclass for rendering LaTeX Math.
 
-`MTMathView` accepts either a string in LaTeX or an `MTMathList` to display. Use
+`AndroidMathView` accepts either a string in LaTeX or an `MTMathList` to display. Use
 `MTMathList` directly only if you are building it programmatically (e.g. using an
 editor), otherwise using LaTeX is the preferable method.
 
@@ -85,7 +85,7 @@ class AndroidMathView @JvmOverloads constructor(
     }
 
     /**
-     * Different display styles supported by the `MTMathView`.
+     * Different display styles supported by the `AndroidMathView`.
      *
      * The only significant difference between the two modes is how fractions
      * and limits on large operators are displayed.
