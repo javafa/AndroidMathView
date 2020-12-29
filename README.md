@@ -2,7 +2,8 @@
 
 # AndroidMathView
 - This Project's cloned from https://github.com/gregcockroft/AndroidMath
-- Just upgraded the latest gradle version
+- Added some custom attributes for xml
+- Added some methods to set attributes for code
 
 <img src="./img/phonescreen.png" width="320">
 
