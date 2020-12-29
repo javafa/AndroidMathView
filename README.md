@@ -15,6 +15,7 @@ Installation from the command line
 git clone https://github.com/javafa/AndroidMathView.git
 
 cd AndroidMathView
+
 ./gradlew installDebug
 ```
 
@@ -27,7 +28,9 @@ CDep pulls in the freetype dependency.
 
 ```
 git clone https://github.com/javafa/AndroidMathView.git
+
 cd AndroidMathView/mathdisplaylib
+
 ./cdep 
 ```
 
@@ -43,9 +46,12 @@ This is using jitpack.io
 Add below lines to root's build.gradle
 
 ```groovy
+...
+
 allprojects {
     repositories {
         ...
+
         maven { url 'https://jitpack.io' }
     }
 }
@@ -55,6 +61,8 @@ Add below lines to apps's build.gradle
 
 ```groovy
 dependencies {
+    ...
+    
     implementation 'com.github.javafa:AndroidMathView:1.0.15'
 }
 	
@@ -90,6 +98,7 @@ dependencies {
         app:textAlignment="center"
         />
 
+...
 
 </ConstraintLayout>
 ```
@@ -133,12 +142,9 @@ class MainActivity:AppCompatActivity() {
 
 #### Credits:
 
-
 * [iosMath](https://github.com/kostub/iosMath) This project is a Kotlin port for Android of the iosMath project 
 * [Freetype](https://www.freetype.org/) is used for rendering glyphs and font metrics.
 * [Freetype jni](https://github.com/mlomb/freetype-jni) was copied as a starting point to access the native  freetype library.
-
-
 
 
 ## Related Projects
@@ -152,13 +158,16 @@ related projects:
   for math equations on iOS.
 * [MathSolver](https://github.com/kostub/MathSolver): A library for
   solving math equations.
-  
+
+
 ## License
 
 AndroidMath is available under the MIT license. See the [LICENSE](./LICENSE)
 file for more info.
 
+
 ### Fonts
+
 This distribution contains the following fonts. These fonts are
 licensed as follows:
 * Latin Modern Math: 
