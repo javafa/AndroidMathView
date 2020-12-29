@@ -93,7 +93,9 @@ dependencies {
 </ConstraintLayout>
 ```
 
-### Attributes   
+### Attributes
+| Naem | Type | Contents
+|------|------|-------------
 | latex | String | "\log_b(x) = \frac{\log_a(x)}{\log_a(b)}"   
 | fontColor | Color | @color/colorId   
 | fontSize | Float | 11.0f   
