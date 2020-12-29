@@ -86,11 +86,13 @@ dependencies {
 ```
 
 ```kotlin
+    val binding by lazy { ActivityMainBinding.inflate(layoutInflater) } 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(activity_main)
+        setContentView(binding.root)
 
-        mathview.latex = "x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}"
+        binding.mathview.latex = "x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}"
     }
 	
 ```

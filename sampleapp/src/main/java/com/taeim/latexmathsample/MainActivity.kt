@@ -10,18 +10,19 @@ import com.taeim.mathdisplay.AndroidMathView.MTMathViewMode
 import com.taeim.mathdisplay.MTFontManager
 import android.graphics.Color
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.content_main.*
+import com.taeim.latexmathsample.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     var menufont: MenuItem? = null
     var menumode: MenuItem? = null
     var menusize: MenuItem? = null
 
+    val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        setSupportActionBar(toolbar)
+        setContentView(binding.root)
+        setSupportActionBar(binding.toolbar)
 
         createEquations()
 
@@ -66,13 +67,13 @@ class MainActivity : AppCompatActivity() {
                     tv.text = it.trim()
                     tv.setTextColor(Color.DKGRAY)
                     println("textSize ${tv.textSize}")
-                    mainLayout.addView(tv)
+                    binding.mainLayout.addView(tv)
                 } else {
                     val mathView = AndroidMathView(this)
                     mathView.fontSize = AndroidMathView.convertDpToPixel(defaultFontSize)
                     mathView.latex = it
                     sampleEquations.add(mathView)
-                    mainLayout.addView(mathView, layoutParams)
+                    binding.mainLayout.addView(mathView, layoutParams)
                 }
             }
         }
@@ -152,11 +153,11 @@ class MainActivity : AppCompatActivity() {
             }
         // Good for profiling
             R.id.modereload -> {
-                mainLayout.removeAllViewsInLayout()
+                binding.mainLayout.removeAllViewsInLayout()
                 sampleEquations.clear()
-                mainLayout.invalidate()
+                binding.mainLayout.invalidate()
                 // Nice to see the screen show blank before adding back equations
-                mainLayout.postDelayed({ createEquations() }, 10)
+                binding.mainLayout.postDelayed({ createEquations() }, 10)
                 sizemenucheck(R.id.f20)
                 modemenucheck(R.id.modedisplay)
                 fontmenucheck(R.id.fontdefault)
