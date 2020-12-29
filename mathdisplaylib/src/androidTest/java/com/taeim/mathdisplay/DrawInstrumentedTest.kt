@@ -1,12 +1,12 @@
-package com.agog.mathdisplay;
+package com.taeim.mathdisplay;
 
 import android.Manifest
 import android.content.Context
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
-import com.agog.mathdisplay.parse.*
-import com.agog.mathdisplay.render.*
-import com.agog.mathdisplay.render.MTTypesetter
+import com.taeim.mathdisplay.parse.*
+import com.taeim.mathdisplay.render.*
+import com.taeim.mathdisplay.render.MTTypesetter
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -20,7 +20,7 @@ import android.os.Environment
 import java.io.FileOutputStream
 import java.io.IOException
 import android.support.test.rule.GrantPermissionRule
-import com.agog.mathdisplay.render.MTCodepointChar
+import com.taeim.mathdisplay.render.MTCodepointChar
 import org.junit.Rule
 
 

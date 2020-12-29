@@ -1,8 +1,8 @@
-package com.agog.mathdisplay.render
+package com.taeim.mathdisplay.render
 
-import com.agog.mathdisplay.parse.MTMathAtomType
-import com.agog.mathdisplay.parse.MathDisplayException
-import com.agog.mathdisplay.render.MTInterElementSpaceType.*
+import com.taeim.mathdisplay.parse.MTMathAtomType
+import com.taeim.mathdisplay.parse.MathDisplayException
+import com.taeim.mathdisplay.render.MTInterElementSpaceType.*
 
 /**
  * Created by greg on 3/13/18.

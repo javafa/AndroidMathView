@@ -1,4 +1,4 @@
-package com.agog.mathdisplay.parse
+package com.taeim.mathdisplay.parse
 
 
 class MathDisplayException(override var message: String) : Exception(message)

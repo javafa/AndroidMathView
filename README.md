@@ -72,7 +72,7 @@ dependencies {
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
       
-    <com.agog.mathdisplay.MTMathView
+    <com.taeim.mathdisplay.AndroidMathView
         android:id="@+id/mathview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -1,11 +1,11 @@
-package com.agog.mathdisplay;
+package com.taeim.mathdisplay;
 
 import android.Manifest
 import android.content.Context
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
-import com.agog.mathdisplay.parse.*
-import com.agog.mathdisplay.render.*
+import com.taeim.mathdisplay.parse.*
+import com.taeim.mathdisplay.render.*
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -18,7 +18,7 @@ import java.io.FileOutputStream
 import java.io.IOException
 import android.support.test.rule.GrantPermissionRule
 import org.junit.Rule
-import com.agog.mathdisplay.MTMathView.MTTextAlignment
+import com.taeim.mathdisplay.AndroidMathView.MTTextAlignment
 
 
 /**
@@ -98,7 +98,7 @@ public class ViewInstrumentedTest {
 
     @Test
     public fun testMTMathView() {
-        val mathView = MTMathView(context!!)
+        val mathView = AndroidMathView(context!!)
         mathView.fontSize = 60f
         mathView.latex = TESTLATEX
 
@@ -118,7 +118,7 @@ public class ViewInstrumentedTest {
     public fun testInlineError() {
         val l = """\notacommand"""
 
-        val mathView = MTMathView(context!!)
+        val mathView = AndroidMathView(context!!)
         mathView.fontSize = 60f
         mathView.latex = l
 
@@ -140,7 +140,7 @@ public class ViewInstrumentedTest {
     public fun testNotInlineError() {
         val l = """\notacommand"""
 
-        val mathView = MTMathView(context!!)
+        val mathView = AndroidMathView(context!!)
         mathView.displayErrorInline = false
         mathView.fontSize = 60f
         mathView.latex = l
@@ -160,7 +160,7 @@ public class ViewInstrumentedTest {
 
     @Test
     public fun testLeftAlign() {
-        val mathView = MTMathView(context!!)
+        val mathView = AndroidMathView(context!!)
         mathView.fontSize = 60f
         mathView.latex = TESTLATEX
 
@@ -174,7 +174,7 @@ public class ViewInstrumentedTest {
 
     @Test
     public fun testCenterAlign() {
-        val mathView = MTMathView(context!!)
+        val mathView = AndroidMathView(context!!)
         mathView.fontSize = 60f
         mathView.latex = TESTLATEX
         mathView.textAlignment = MTTextAlignment.KMTTextAlignmentCenter
@@ -189,7 +189,7 @@ public class ViewInstrumentedTest {
 
     @Test
     public fun testRightAlign() {
-        val mathView = MTMathView(context!!)
+        val mathView = AndroidMathView(context!!)
         mathView.fontSize = 60f
         mathView.latex = TESTLATEX
         mathView.textAlignment = MTTextAlignment.KMTTextAlignmentRight

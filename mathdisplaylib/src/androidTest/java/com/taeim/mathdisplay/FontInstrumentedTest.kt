@@ -1,10 +1,10 @@
-package com.agog.mathdisplay;
+package com.taeim.mathdisplay;
 
 import android.content.Context
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
-import com.agog.mathdisplay.render.CGGlyph
-import com.agog.mathdisplay.render.BoundingBox
+import com.taeim.mathdisplay.render.CGGlyph
+import com.taeim.mathdisplay.render.BoundingBox
 
 import org.junit.Test
 import org.junit.runner.RunWith

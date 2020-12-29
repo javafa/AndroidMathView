@@ -1,9 +1,9 @@
-package com.agog.mathdisplay;
+package com.taeim.mathdisplay;
 
-import com.agog.mathdisplay.parse.MTMathAtomType.*
+import com.taeim.mathdisplay.parse.MTMathAtomType.*
 import org.junit.Test
 import org.junit.Assert.*
-import com.agog.mathdisplay.parse.*
+import com.taeim.mathdisplay.parse.*
 
 
 /**

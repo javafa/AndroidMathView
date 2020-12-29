@@ -1,12 +1,12 @@
-package com.agog.mathdisplay.render
+package com.taeim.mathdisplay.render
 
 import android.graphics.Color
-import com.agog.mathdisplay.parse.*
-import com.agog.mathdisplay.parse.MTMathAtomType.*
-import com.agog.mathdisplay.parse.MTLineStyle.*
-import com.agog.mathdisplay.parse.MTColumnAlignment.*
+import com.taeim.mathdisplay.parse.*
+import com.taeim.mathdisplay.parse.MTMathAtomType.*
+import com.taeim.mathdisplay.parse.MTLineStyle.*
+import com.taeim.mathdisplay.parse.MTColumnAlignment.*
 
-import com.agog.mathdisplay.render.MTInterElementSpaceType.*
+import com.taeim.mathdisplay.render.MTInterElementSpaceType.*
 
 
 

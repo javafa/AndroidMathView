@@ -1,4 +1,4 @@
-package com.agog.mathdisplay.parse
+package com.taeim.mathdisplay.parse
 
 private const val MTSymbolMultiplication = "\u00D7"
 private const val MTSymbolDivision = "\u00F7"

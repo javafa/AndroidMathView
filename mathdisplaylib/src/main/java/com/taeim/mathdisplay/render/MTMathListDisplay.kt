@@ -1,17 +1,17 @@
 @file:Suppress("ConstantConditionIf")
 
-package com.agog.mathdisplay.render
+package com.taeim.mathdisplay.render
 
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
 import android.os.Build
-import com.agog.mathdisplay.parse.NSNotFound
-import com.agog.mathdisplay.parse.NSRange
+import com.taeim.mathdisplay.parse.NSNotFound
+import com.taeim.mathdisplay.parse.NSRange
 
-import com.agog.mathdisplay.parse.*
+import com.taeim.mathdisplay.parse.*
 
-import com.agog.mathdisplay.render.MTLinePosition.*
+import com.taeim.mathdisplay.render.MTLinePosition.*
 
 const val DEBUG = false
 

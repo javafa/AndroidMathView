@@ -1,6 +1,6 @@
-package com.agog.mathdisplay.render
+package com.taeim.mathdisplay.render
 
-import com.agog.mathdisplay.parse.MathDisplayException
+import com.taeim.mathdisplay.parse.MathDisplayException
 import com.pvporbit.freetype.*
 import com.pvporbit.freetype.FreeTypeConstants.FT_LOAD_NO_SCALE
 import java.io.IOException

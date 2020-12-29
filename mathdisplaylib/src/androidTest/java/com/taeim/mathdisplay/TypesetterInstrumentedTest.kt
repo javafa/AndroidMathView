@@ -1,12 +1,12 @@
-package com.agog.mathdisplay;
+package com.taeim.mathdisplay;
 
 import android.content.Context
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
-import com.agog.mathdisplay.parse.*
-import com.agog.mathdisplay.render.*
-import com.agog.mathdisplay.render.MTTypesetter
-import com.agog.mathdisplay.parse.MTFontStyle.*
+import com.taeim.mathdisplay.parse.*
+import com.taeim.mathdisplay.render.*
+import com.taeim.mathdisplay.render.MTTypesetter
+import com.taeim.mathdisplay.parse.MTFontStyle.*
 
 
 import org.junit.Test

@@ -1,9 +1,9 @@
-package com.agog.mathdisplay
+package com.taeim.mathdisplay
 
 import android.content.Context
 import android.content.res.AssetManager
-import com.agog.mathdisplay.parse.MathDisplayException
-import com.agog.mathdisplay.render.MTFont
+import com.taeim.mathdisplay.parse.MathDisplayException
+import com.taeim.mathdisplay.render.MTFont
 
 
 const val KDefaultFontSize = 20f

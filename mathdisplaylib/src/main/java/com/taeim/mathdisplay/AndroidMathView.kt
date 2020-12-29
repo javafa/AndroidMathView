@@ -1,14 +1,14 @@
-package com.agog.mathdisplay
+package com.taeim.mathdisplay
 
 import android.view.View
-import com.agog.mathdisplay.render.MTFont
-import com.agog.mathdisplay.render.MTMathListDisplay
+import com.taeim.mathdisplay.render.MTFont
+import com.taeim.mathdisplay.render.MTMathListDisplay
 import android.content.Context
 import android.util.AttributeSet
-import com.agog.mathdisplay.parse.*
-import com.agog.mathdisplay.render.MTTypesetter
-import com.agog.mathdisplay.MTMathView.MTTextAlignment.*
-import com.agog.mathdisplay.MTMathView.MTMathViewMode.*
+import com.taeim.mathdisplay.parse.*
+import com.taeim.mathdisplay.render.MTTypesetter
+import com.taeim.mathdisplay.AndroidMathView.MTTextAlignment.*
+import com.taeim.mathdisplay.AndroidMathView.MTMathViewMode.*
 import android.content.res.Resources
 import android.graphics.*
 
@@ -26,7 +26,7 @@ is left. This can be changed by setting `textAlignment`. The math is default dis
 When created it uses `MTFontManager.defaultFont` as its font. This can be changed using
 the `font` parameter.
  */
-class MTMathView @JvmOverloads constructor(
+class AndroidMathView @JvmOverloads constructor(
         context: Context,
         attrs: AttributeSet? = null,
         defStyle: Int = 0

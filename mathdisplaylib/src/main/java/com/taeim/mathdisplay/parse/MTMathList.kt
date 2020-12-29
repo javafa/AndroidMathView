@@ -1,4 +1,4 @@
-package com.agog.mathdisplay.parse
+package com.taeim.mathdisplay.parse
 
 class MTMathList {
     var atoms = mutableListOf<MTMathAtom>()

@@ -1,11 +1,10 @@
-package com.agog.mathdisplay.render
+package com.taeim.mathdisplay.render
 
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Paint
 import com.pvporbit.freetype.FreeTypeConstants
-import android.util.Log
-import com.agog.mathdisplay.parse.MathDisplayException
+import com.taeim.mathdisplay.parse.MathDisplayException
 
 
 class MTDrawFreeType(val mathfont: MTFontMathTable) {

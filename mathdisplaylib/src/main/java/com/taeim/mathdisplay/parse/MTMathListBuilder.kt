@@ -8,7 +8,7 @@
 //  This software may be modified and distributed under the terms of the
 //  MIT license. See the LICENSE file for details.
 //
-package com.agog.mathdisplay.parse
+package com.taeim.mathdisplay.parse
 
 
 // NSString *const MTParseError = "ParseError"
@@ -132,7 +132,7 @@ class MTMathListBuilder(str: String) {
                     if (stopChar.toInt() != 0) throw MathDisplayException("This should have been handled before")
                     // We encountered a closing brace when there is no stop set, that means there was no
                     // corresponding opening brace.
-                    this.setError(com.agog.mathdisplay.parse.MTParseErrors.MismatchBraces, "Mismatched braces.")
+                    this.setError(com.taeim.mathdisplay.parse.MTParseErrors.MismatchBraces, "Mismatched braces.")
                     return null
                 }
                 '\\' -> {

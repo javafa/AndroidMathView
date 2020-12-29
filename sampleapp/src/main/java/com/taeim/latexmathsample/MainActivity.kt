@@ -1,13 +1,13 @@
-package com.agog.latexmathsample
+package com.taeim.latexmathsample
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.LinearLayout
-import com.agog.mathdisplay.MTMathView
-import com.agog.mathdisplay.MTMathView.MTMathViewMode
-import com.agog.mathdisplay.MTFontManager
+import com.taeim.mathdisplay.AndroidMathView
+import com.taeim.mathdisplay.AndroidMathView.MTMathViewMode
+import com.taeim.mathdisplay.MTFontManager
 import android.graphics.Color
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    var sampleEquations: MutableList<MTMathView> = mutableListOf()
+    var sampleEquations: MutableList<AndroidMathView> = mutableListOf()
     var defaultFontSize = 20.0f  // Starting fontsize dp pixels
 
     fun createEquations() {
@@ -68,8 +68,8 @@ class MainActivity : AppCompatActivity() {
                     println("textSize ${tv.textSize}")
                     mainLayout.addView(tv)
                 } else {
-                    val mathView = MTMathView(this)
-                    mathView.fontSize = MTMathView.convertDpToPixel(defaultFontSize)
+                    val mathView = AndroidMathView(this)
+                    mathView.fontSize = AndroidMathView.convertDpToPixel(defaultFontSize)
                     mathView.latex = it
                     sampleEquations.add(mathView)
                     mainLayout.addView(mathView, layoutParams)
@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun applyfontsize(fontsize: Float) {
-        val pixelfontsize = MTMathView.convertDpToPixel(fontsize)
+        val pixelfontsize = AndroidMathView.convertDpToPixel(fontsize)
         for (eq in sampleEquations) {
             eq.font = MTFontManager.fontWithName(eq.font!!.name, pixelfontsize)
         }

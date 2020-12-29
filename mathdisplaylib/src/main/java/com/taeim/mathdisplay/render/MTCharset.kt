@@ -1,7 +1,7 @@
-package com.agog.mathdisplay.render
+package com.taeim.mathdisplay.render
 
-import com.agog.mathdisplay.parse.MTFontStyle
-import com.agog.mathdisplay.parse.MathDisplayException
+import com.taeim.mathdisplay.parse.MTFontStyle
+import com.taeim.mathdisplay.parse.MathDisplayException
 
 /**
  * Created by greg on 3/13/18.

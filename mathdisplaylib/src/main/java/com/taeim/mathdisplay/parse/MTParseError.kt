@@ -1,4 +1,4 @@
-package com.agog.mathdisplay.parse
+package com.taeim.mathdisplay.parse
 
 /**
  * Created by greg on 2/12/18.

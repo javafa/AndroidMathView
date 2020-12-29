@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.agog.latexmathsample.MainActivity"
+    tools:context="com.taeim.latexmathsample.MainActivity"
     tools:showIn="@layout/activity_main">
 
 

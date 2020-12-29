@@ -1,8 +1,7 @@
-package com.agog.mathdisplay.render
+package com.taeim.mathdisplay.render
 
-import android.content.Context
 import android.content.res.AssetManager
-import com.agog.mathdisplay.parse.MathDisplayException
+import com.taeim.mathdisplay.parse.MathDisplayException
 import android.util.Log
 
 public fun PackageWarning(str: String) {
