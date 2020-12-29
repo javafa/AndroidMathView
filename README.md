@@ -94,11 +94,11 @@ dependencies {
 ```
 
 ### Attributes   
-latex | String | "\log_b(x) = \frac{\log_a(x)}{\log_a(b)}"   
-fontColor | Color | @color/colorId   
-fontSize | Float | 11.0f   
-fontType | Enum | LatinModernMath, TeXGyreTermes, XITSMath   
-textAlignment | Enum | left, center, right   
+| latex | String | "\log_b(x) = \frac{\log_a(x)}{\log_a(b)}"   
+| fontColor | Color | @color/colorId   
+| fontSize | Float | 11.0f   
+| fontType | Enum | LatinModernMath, TeXGyreTermes, XITSMath   
+| textAlignment | Enum | left, center, right   
 
 ```kotlin
     val binding by lazy { ActivityMainBinding.inflate(layoutInflater) } 
