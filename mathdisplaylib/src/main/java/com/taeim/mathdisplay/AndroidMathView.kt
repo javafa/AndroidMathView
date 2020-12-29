@@ -71,7 +71,7 @@ class AndroidMathView : View {
                     }
                 }
                 R.styleable.AndroidMathView_fontSize -> {
-                    val size = typed.getDimensionPixelSize(typed.getIndex(i), 0)
+                    val size = typed.getDimensionPixelSize( typed.getIndex(i), 0 )
                     if(size > 0) {
                         textSize = size.toFloat()
                     }
