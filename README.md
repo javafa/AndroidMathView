@@ -128,7 +128,7 @@ class MainActivity:AppCompatActivity() {
 |------|-----------|--------|-------------
 | setColorResource(@ColorRes colorId:Int) | Int | void | mathView2.setColorResource(R.color.colorPrimary)   
 | setColorString(color:String) | String | void | mathView3.setColorString("#5312f3")
-| setFontSize(dp:Float) | Float | void | 11.0f   
+| setFontSize(dp:Float) | Float | void | mathView2.setFontSize(33.5f) 
 * not support setTextSize use setFontSize instead
 
 #### Credits:
