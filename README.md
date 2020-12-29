@@ -43,20 +43,20 @@ This is using jitpack.io
 Add below lines to root's build.gradle
 
 ```groovy
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
 ```
 
 Add below lines to apps's build.gradle
 
 ```groovy
 dependencies {
-	        implementation 'com.github.javafa:AndroidMathView:1.0.15'
-	}
+    implementation 'com.github.javafa:AndroidMathView:1.0.15'
+}
 	
 ```
 
@@ -104,6 +104,8 @@ dependencies {
 | textAlignment | Enum | left, center, right   
 
 ```kotlin
+class MainActivity:AppCompatActivity() {
+    
     val binding by lazy { ActivityMainBinding.inflate(layoutInflater) } 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -117,7 +119,9 @@ dependencies {
         binding.mathView3.latex = "\\int_{-\\infty}^\\infty \\! e^{-x^2} dx = \\sqrt{\\pi}"
         binding.mathView3.setColorString("#5312f3")
     }
-	
+
+    ...	
+}
 ```
 ### Api
 | Name | Parameter | Return | Example
