@@ -4,7 +4,7 @@
         <attr name="latex" format="reference|string" />
         <attr name="fontColor" format="color" />
 
-        <attr name="fontSize" format="float" />
+        <attr name="fontSize" format="dimension" />
 
         <attr name="fontType" format="enum" >
             <enum name="LatinModernMath" value="0"/>

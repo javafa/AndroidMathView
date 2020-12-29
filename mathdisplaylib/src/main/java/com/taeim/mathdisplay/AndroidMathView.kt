@@ -12,6 +12,7 @@ import com.taeim.mathdisplay.AndroidMathView.MTMathViewMode.*
 import android.content.res.Resources
 import android.graphics.*
 import android.support.annotation.ColorRes
+import android.support.annotation.Dimension
 import android.support.v4.content.ContextCompat
 import android.util.Log
 
@@ -64,14 +65,16 @@ class AndroidMathView : View {
                 R.styleable.AndroidMathView_fontType -> {
                     val fontIdx = typed.getInt(typed.getIndex(i), 0)
                     font = when(fontIdx) {
-                        1 -> MTFontManager.fontWithName("texgyretermes-math", fontSize)
-                        2 -> MTFontManager.fontWithName("xits-math", fontSize)
-                        else -> MTFontManager.fontWithName("latinmodern-math", fontSize)
+                        1 -> MTFontManager.fontWithName("texgyretermes-math", textSize)
+                        2 -> MTFontManager.fontWithName("xits-math", textSize)
+                        else -> MTFontManager.fontWithName("latinmodern-math", textSize)
                     }
                 }
                 R.styleable.AndroidMathView_fontSize -> {
-                    val size = typed.getFloat(typed.getIndex(i), 20f)
-                    fontSize = convertDpToPixel(size)
+                    val size = typed.getDimensionPixelSize(typed.getIndex(i), 0)
+                    if(size > 0) {
+                        textSize = size.toFloat()
+                    }
                 }
             }
         }
@@ -180,7 +183,7 @@ class AndroidMathView : View {
     /**
      * This is in device pixels. Default value is see KDefaultFontSize
      */
-    var fontSize = KDefaultFontSize // This is in device pixels.
+    var textSize = KDefaultFontSize // This is in device pixels.
         set(value) {
             field = value
             val of = this.font
@@ -189,6 +192,10 @@ class AndroidMathView : View {
                 this.font = f
             }
         }
+
+    fun setFontSize(dp:Float) {
+        textSize = convertDpToPixel(dp)
+    }
 
     /**
      * Should display or text mode be used.
@@ -311,9 +318,9 @@ class AndroidMathView : View {
             val availableHeight = height - paddingBottom - paddingTop
             // center things vertically
             var eqheight = dl.ascent + dl.descent
-            if (eqheight < fontSize / 2) {
+            if (eqheight < textSize / 2) {
                 // Set the height to the half the size of the font
-                eqheight = fontSize / 2
+                eqheight = textSize / 2
             }
             // This will put center of vertical bounds to vertical center
             val textY = (availableHeight - eqheight) / 2 + dl.descent + paddingBottom

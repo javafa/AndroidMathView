@@ -53,7 +53,7 @@
                             android:id="@+id/mathView1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:fontSize="20"
+                            app:fontSize="20sp"
                             app:fontType="LatinModernMath"
                             app:latex="\log_b(x) = \frac{\log_a(x)}{\log_a(b)}"
                             app:fontColor="@color/colorAccent"
@@ -67,7 +67,7 @@
                             android:id="@+id/mathView2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:fontSize="20"
+                            app:fontSize="50sp"
                             app:fontType="TeXGyreTermes"
                             app:textAlignment="center" />
 
@@ -79,7 +79,7 @@
                             android:id="@+id/mathView3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            app:fontSize="20"
+                            app:fontSize="10sp"
                             app:fontType="XITSMath"
                             app:textAlignment="center"
                             />

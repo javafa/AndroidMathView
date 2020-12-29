@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.mathView2.latex = "{n \\brace k} = \\frac{1}{k!}\\sum_{j=0}^k (-1)^{k-j}\\binom{k}{j}(k-j)^n"
         binding.mathView2.setColorResource(R.color.colorPrimary)
+        binding.mathView2.setFontSize(33.5f)
 
         binding.mathView3.latex = "\\int_{-\\infty}^\\infty \\! e^{-x^2} dx = \\sqrt{\\pi}"
         binding.mathView3.setColorString("#5312f3")
@@ -79,7 +80,7 @@ class MainActivity : AppCompatActivity() {
                     binding.mainLayout.addView(tv)
                 } else {
                     val mathView = AndroidMathView(this)
-                    mathView.fontSize = AndroidMathView.convertDpToPixel(defaultFontSize)
+                    mathView.textSize = AndroidMathView.convertDpToPixel(defaultFontSize)
                     mathView.latex = it
                     sampleEquations.add(mathView)
                     binding.mainLayout.addView(mathView, layoutParams)
@@ -90,7 +91,7 @@ class MainActivity : AppCompatActivity() {
 
     fun applyfont(fontname: String) {
         for (eq in sampleEquations) {
-            eq.font = MTFontManager.fontWithName(fontname, eq.fontSize)
+            eq.font = MTFontManager.fontWithName(fontname, eq.textSize)
         }
     }
 

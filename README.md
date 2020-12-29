@@ -66,7 +66,7 @@ dependencies {
         android:id="@+id/mathView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:fontSize="20"
+        app:fontSize="20sp"
         app:fontType="LatinModernMath"
         app:latex="\log_b(x) = \frac{\log_a(x)}{\log_a(b)}"
         app:fontColor="@color/colorAccent"
@@ -76,7 +76,7 @@ dependencies {
         android:id="@+id/mathView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:fontSize="20"
+        app:fontSize="50sp"
         app:fontType="TeXGyreTermes"
         app:textAlignment="center" />
 
@@ -84,7 +84,7 @@ dependencies {
         android:id="@+id/mathView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:fontSize="20"
+        app:fontSize="10sp"
         app:fontType="XITSMath"
         app:textAlignment="center"
         />
@@ -94,11 +94,11 @@ dependencies {
 ```
 
 ### Attributes
-| Naem | Type | Contents
+| Name | Type | Example
 |------|------|-------------
-| latex | String | "\log_b(x) = \frac{\log_a(x)}{\log_a(b)}"   
+| latex | String | \log_b(x) = \frac{\log_a(x)}{\log_a(b)}   
 | fontColor | Color | @color/colorId   
-| fontSize | Float | 11.0   
+| fontSize | Dimmension | 11sp   
 | fontType | Enum | LatinModernMath, TeXGyreTermes, XITSMath   
 | textAlignment | Enum | left, center, right   
 
@@ -111,12 +111,20 @@ dependencies {
 
         binding.mathView2.latex = "{n \\brace k} = \\frac{1}{k!}\\sum_{j=0}^k (-1)^{k-j}\\binom{k}{j}(k-j)^n"
         binding.mathView2.setColorResource(R.color.colorPrimary)
+        binding.mathView2.setFontSize(33.5f)
 
         binding.mathView3.latex = "\\int_{-\\infty}^\\infty \\! e^{-x^2} dx = \\sqrt{\\pi}"
         binding.mathView3.setColorString("#5312f3")
     }
 	
 ```
+### Api
+| Name | Parameter | Return | Example
+|------|-----------|--------|-------------
+| setColorResource(@ColorRes colorId:Int) | Int | void | mathView2.setColorResource(R.color.colorPrimary)   
+| setColorString(color:String) | String | void | mathView3.setColorString("#5312f3")
+| setFontSize(dp:Float) | Float | void | 11.0f   
+* not support setTextSize use setFontSize instead
 
 #### Credits:
 
