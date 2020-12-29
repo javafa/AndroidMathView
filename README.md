@@ -62,28 +62,43 @@ dependencies {
 ```xml
 <ConstraintLayout ...>
 
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello Math!"
-        app:layout_constraintBottom_toTopOf="@+id/mathview"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-      
     <com.taeim.mathdisplay.AndroidMathView
-        android:id="@+id/mathview"
-        android:layout_width="wrap_content"
+        android:id="@+id/mathView1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/description" />
+        app:fontSize="20"
+        app:fontType="LatinModernMath"
+        app:latex="\log_b(x) = \frac{\log_a(x)}{\log_a(b)}"
+        app:fontColor="@color/colorAccent"
+        app:textAlignment="center" />
+
+    <com.taeim.mathdisplay.AndroidMathView
+        android:id="@+id/mathView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontSize="20"
+        app:fontType="TeXGyreTermes"
+        app:textAlignment="center" />
+
+    <com.taeim.mathdisplay.AndroidMathView
+        android:id="@+id/mathView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontSize="20"
+        app:fontType="XITSMath"
+        app:textAlignment="center"
+        />
 
 
 </ConstraintLayout>
 ```
+
+### Attributes   
+latex | String | "\log_b(x) = \frac{\log_a(x)}{\log_a(b)}"   
+fontColor | Color | @color/colorId   
+fontSize | Float | 11.0f   
+fontType | Enum | LatinModernMath, TeXGyreTermes, XITSMath   
+textAlignment | Enum | left, center, right   
 
 ```kotlin
     val binding by lazy { ActivityMainBinding.inflate(layoutInflater) } 
@@ -92,7 +107,11 @@ dependencies {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.mathview.latex = "x = \\frac{-b \\pm \\sqrt{b^2-4ac}}{2a}"
+        binding.mathView2.latex = "{n \\brace k} = \\frac{1}{k!}\\sum_{j=0}^k (-1)^{k-j}\\binom{k}{j}(k-j)^n"
+        binding.mathView2.setColorResource(R.color.colorPrimary)
+
+        binding.mathView3.latex = "\\int_{-\\infty}^\\infty \\! e^{-x^2} dx = \\sqrt{\\pi}"
+        binding.mathView3.setColorString("#5312f3")
     }
 	
 ```

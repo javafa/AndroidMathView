@@ -11,6 +11,9 @@ import com.taeim.mathdisplay.AndroidMathView.MTTextAlignment.*
 import com.taeim.mathdisplay.AndroidMathView.MTMathViewMode.*
 import android.content.res.Resources
 import android.graphics.*
+import android.support.annotation.ColorRes
+import android.support.v4.content.ContextCompat
+import android.util.Log
 
 
 /** View subclass for rendering LaTeX Math.
@@ -26,11 +29,54 @@ is left. This can be changed by setting `textAlignment`. The math is default dis
 When created it uses `MTFontManager.defaultFont` as its font. This can be changed using
 the `font` parameter.
  */
-class AndroidMathView @JvmOverloads constructor(
-        context: Context,
-        attrs: AttributeSet? = null,
-        defStyle: Int = 0
-) : View(context, attrs, defStyle) {
+class AndroidMathView : View {
+    @JvmOverloads
+    constructor(
+            context: Context,
+            attrs: AttributeSet? = null,
+            defStyle: Int = 0
+    ) : super(context, attrs, defStyle) {
+        val typed = context.obtainStyledAttributes(attrs, R.styleable.AndroidMathView)
+
+        val size = typed.indexCount
+
+        for (i in 0 until size) {
+            when (typed.getIndex(i)) {
+                R.styleable.AndroidMathView_latex -> {
+                    val text = typed.getString(typed.getIndex(i)) ?: ""
+                    Log.d("케이텍", "text=$text")
+                    latex = text.replace("\\","\\\\")
+                }
+                R.styleable.AndroidMathView_fontColor -> {
+                    val color = typed.getResourceId(typed.getIndex(i), 0)
+                    if(color > 0) {
+                        fontColor = ContextCompat.getColor(context, color)
+                    }
+                }
+                R.styleable.AndroidMathView_textAlignment -> {
+                    val alignIdx = typed.getInt(typed.getIndex(i), 0)
+                    textAlignment = when(alignIdx) {
+                        1 -> KMTTextAlignmentCenter
+                        2 -> KMTTextAlignmentRight
+                        else -> KMTTextAlignmentLeft
+                    }
+                }
+                R.styleable.AndroidMathView_fontType -> {
+                    val fontIdx = typed.getInt(typed.getIndex(i), 0)
+                    font = when(fontIdx) {
+                        1 -> MTFontManager.fontWithName("texgyretermes-math", fontSize)
+                        2 -> MTFontManager.fontWithName("xits-math", fontSize)
+                        else -> MTFontManager.fontWithName("latinmodern-math", fontSize)
+                    }
+                }
+                R.styleable.AndroidMathView_fontSize -> {
+                    val size = typed.getFloat(typed.getIndex(i), 20f)
+                    fontSize = convertDpToPixel(size)
+                }
+            }
+        }
+    }
+
 
     private var displayList: MTMathListDisplay? = null
     private var _mathList: MTMathList? = null
@@ -158,7 +204,7 @@ class AndroidMathView @JvmOverloads constructor(
     /**
      * Color of the equation if not overridden with local color changes by TeX commands
      */
-    var textColor = Color.BLACK
+    var fontColor = Color.BLACK
         set(value) {
             field = value
             val dl = displayList
@@ -167,6 +213,15 @@ class AndroidMathView @JvmOverloads constructor(
             }
             invalidate()
         }
+
+    fun setColorString(color:String) {
+        var c = if(!color.startsWith("#")) "#$color" else color
+        fontColor = Color.parseColor(c)
+    }
+
+    fun setColorResource(@ColorRes resId:Int) {
+        fontColor = ContextCompat.getColor(context, resId)
+    }
 
     /**
      * Alignment within the view
@@ -241,7 +296,7 @@ class AndroidMathView @JvmOverloads constructor(
         }
 
         if (dl != null) {
-            dl.textColor = this.textColor
+            dl.textColor = this.fontColor
             // Determine x position based on alignment
             val textX = when (this.textAlignment) {
                 KMTTextAlignmentLeft -> paddingLeft
@@ -298,6 +353,5 @@ class AndroidMathView @JvmOverloads constructor(
         width = maxOf(width, r.width().toFloat())
         setMeasuredDimension((width + 1.0f).toInt(), (height + 1.0f).toInt())
     }
-
 
 }

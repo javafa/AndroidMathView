@@ -9,6 +9,7 @@ import com.taeim.mathdisplay.AndroidMathView
 import com.taeim.mathdisplay.AndroidMathView.MTMathViewMode
 import com.taeim.mathdisplay.MTFontManager
 import android.graphics.Color
+import android.support.v4.content.ContextCompat
 import android.widget.TextView
 import com.taeim.latexmathsample.databinding.ActivityMainBinding
 
@@ -26,6 +27,16 @@ class MainActivity : AppCompatActivity() {
 
         createEquations()
 
+        setAndroidMathView()
+    }
+
+    private fun setAndroidMathView() {
+
+        binding.mathView2.latex = "{n \\brace k} = \\frac{1}{k!}\\sum_{j=0}^k (-1)^{k-j}\\binom{k}{j}(k-j)^n"
+        binding.mathView2.setColorResource(R.color.colorPrimary)
+
+        binding.mathView3.latex = "\\int_{-\\infty}^\\infty \\! e^{-x^2} dx = \\sqrt{\\pi}"
+        binding.mathView3.setColorString("#5312f3")
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -37,7 +48,6 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-
     var sampleEquations: MutableList<AndroidMathView> = mutableListOf()
     var defaultFontSize = 20.0f  // Starting fontsize dp pixels
 
@@ -48,7 +58,6 @@ class MainActivity : AppCompatActivity() {
         // Some padding around the equations. Cosmetic
         val layoutParams = LinearLayout.LayoutParams(0, 0)
         layoutParams.setMargins(layoutPadHoriz, layoutPadVert, layoutPadHoriz, layoutPadVert)
-
         /*
              We read a plain text file with LaTeX strings and comments
              Each LaTeX string is placed in a separate MTMathViews.
@@ -77,10 +86,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-
-
     }
-
 
     fun applyfont(fontname: String) {
         for (eq in sampleEquations) {
@@ -168,13 +174,13 @@ class MainActivity : AppCompatActivity() {
         // Color Menu
             R.id.colorblack -> {
                 for (eq in sampleEquations) {
-                    eq.textColor = Color.BLACK
+                    eq.fontColor = Color.BLACK
                 }
                 return true
             }
             R.id.colorpurple -> {
                 for (eq in sampleEquations) {
-                    eq.textColor = Color.MAGENTA
+                    eq.fontColor = Color.MAGENTA
                 }
                 return true
             }

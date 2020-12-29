@@ -21,8 +21,8 @@
     </android.support.design.widget.AppBarLayout>
 
     <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="horizontal"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
@@ -42,9 +42,48 @@
 
                     <LinearLayout
                         android:id="@+id/mainLayout"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical" />
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MathView 1"/>
+                        <com.taeim.mathdisplay.AndroidMathView
+                            android:id="@+id/mathView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:fontSize="20"
+                            app:fontType="LatinModernMath"
+                            app:latex="\log_b(x) = \frac{\log_a(x)}{\log_a(b)}"
+                            app:fontColor="@color/colorAccent"
+                            app:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MathView 2"/>
+                        <com.taeim.mathdisplay.AndroidMathView
+                            android:id="@+id/mathView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:fontSize="20"
+                            app:fontType="TeXGyreTermes"
+                            app:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="MathView 3"/>
+                        <com.taeim.mathdisplay.AndroidMathView
+                            android:id="@+id/mathView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:fontSize="20"
+                            app:fontType="XITSMath"
+                            app:textAlignment="center"
+                            />
+                    </LinearLayout>
                 </LinearLayout>
             </ScrollView>
 
