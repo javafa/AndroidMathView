@@ -54,7 +54,7 @@ Add below lines to apps's build.gradle
 
 ```groovy
 dependencies {
-	        implementation 'com.github.javafa:AndroidMathView:1.0.12'
+	        implementation 'com.github.javafa:AndroidMathView:1.0.13'
 	}
 	
 ```
