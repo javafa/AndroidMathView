@@ -4,8 +4,8 @@ import android.content.res.AssetManager
 import com.taeim.mathdisplay.parse.MathDisplayException
 import android.util.Log
 
-public fun PackageWarning(str: String) {
-    Log.w("com.agog.mathdisplay.render", str)
+fun PackageWarning(str: String) {
+    Log.w("javafa:androidMathView", str)
 }
 
 

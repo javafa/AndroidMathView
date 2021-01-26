@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setAndroidMathView() {
 
-        binding.mathView2.latex = "{n \\brace k} = \\frac{1}{k!}\\sum_{j=0}^k (-1)^{k-j}\\binom{k}{j}(k-j)^n"
+        binding.mathView2.latex = "\\frak Q(\\lambda,\\hat{\\lambda}) =  -\\frac{1}{2} \\mathbb P(O \\mid \\lambda ) \\sum_s \\sum_m \\sum_t \\gamma_m^{(s)} (t) + \\\\  \\quad \\left( \\log(2 \\pi ) + \\log \\left| \\cal C_m^{(s)} \\right| +  \\left( o_t - \\hat{\\mu}_m^{(s)} \\right) ^T \\cal C_m^{(s)-1} \\right)"
         binding.mathView2.setColorResource(R.color.colorPrimary)
         binding.mathView2.setFontSize(33.5f)
 

@@ -6,13 +6,13 @@ apply plugin: 'com.github.dcendents.android-maven'
 group='com.github.javafa'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
 
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 29
+        targetSdkVersion 30
         versionCode 1
-        versionName "1.0.15"
+        versionName "1.0.16"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         sourceSets.test.resources.srcDirs += ["src/main"]
@@ -58,7 +58,7 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'junit:junit:4.12'
     implementation 'com.android.support:support-annotations:27.1.1'
     implementation 'com.android.support.test:runner:1.0.2'
