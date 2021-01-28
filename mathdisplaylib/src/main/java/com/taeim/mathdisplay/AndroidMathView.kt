@@ -11,10 +11,12 @@ import com.taeim.mathdisplay.AndroidMathView.MTTextAlignment.*
 import com.taeim.mathdisplay.AndroidMathView.MTMathViewMode.*
 import android.content.res.Resources
 import android.graphics.*
-import android.support.annotation.ColorRes
-import android.support.annotation.Dimension
-import android.support.v4.content.ContextCompat
+//import android.support.annotation.ColorRes
+//import android.support.annotation.Dimension
+//import android.support.v4.content.ContextCompat
 import android.util.Log
+import androidx.annotation.ColorRes
+import androidx.core.content.ContextCompat
 
 
 /** View subclass for rendering LaTeX Math.

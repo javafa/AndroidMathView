@@ -1,7 +1,6 @@
 package com.taeim.latexmathsample
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.LinearLayout
@@ -9,8 +8,9 @@ import com.taeim.mathdisplay.AndroidMathView
 import com.taeim.mathdisplay.AndroidMathView.MTMathViewMode
 import com.taeim.mathdisplay.MTFontManager
 import android.graphics.Color
-import android.support.v4.content.ContextCompat
+import android.view.View
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import com.taeim.latexmathsample.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        setSupportActionBar(binding.toolbar)
+//        setSupportActionBar(binding.toolbar)
 
         createEquations()
 
