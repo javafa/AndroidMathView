@@ -6,6 +6,8 @@
 
         <attr name="fontSize" format="dimension" />
 
+        <attr name="autoSize" format="boolean" />
+
         <attr name="fontType" format="enum" >
             <enum name="LatinModernMath" value="0"/>
             <enum name="TeXGyreTermes" value="1"/>

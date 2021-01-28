@@ -76,10 +76,12 @@ class AndroidMathView : View {
                         textSize = size.toFloat()
                     }
                 }
+                R.styleable.AndroidMathView_autoSize -> {
+                    autoSize = typed.getBoolean( typed.getIndex(i), true )
+                }
             }
         }
     }
-
 
     private var displayList: MTMathListDisplay? = null
     private var _mathList: MTMathList? = null
@@ -121,6 +123,11 @@ class AndroidMathView : View {
             requestLayout()
             invalidate()
         }
+
+    /**
+     * If you want to use autoSize property then you have to set the fixed layout_width. ex) 300dp
+     */
+    var autoSize = false
 
     companion object {
         /**
@@ -259,6 +266,8 @@ class AndroidMathView : View {
      */
     val errorFontSize = 20.0f
 
+    val density = context.resources.displayMetrics.density
+
     private fun drawError(canvas: Canvas): Boolean {
         if (!displayError()) {
             return false
@@ -303,34 +312,52 @@ class AndroidMathView : View {
         }
 
         if (dl != null) {
-            dl.textColor = this.fontColor
-            // Determine x position based on alignment
-            val textX = when (this.textAlignment) {
-                KMTTextAlignmentLeft -> paddingLeft
 
-                KMTTextAlignmentCenter ->
-                    (width - paddingLeft - paddingRight - dl.width.toInt()) / 2 + paddingLeft
+            Log.d("매쓰뷰", "math size=${dl.width}, view size=${layoutParams.width}, dendity=${density} text=${latex}")
 
-                KMTTextAlignmentRight ->
-                    width - dl.width.toInt() - paddingRight
+            // auto-size
+            if(autoSize && dl.width > layoutParams.width && layoutParams.width > 0) {
+                val scale = dl.width / layoutParams.width
+                val resize = textSize / scale
+                Log.d("매쓰뷰", "textsize origin =${textSize}, resize=${resize}, scale=${scale}")
+                font = font!!.copyFontWithSize(resize)
+
+                displayList = MTTypesetter.createLineForMathList(ml!!, font!!, currentStyle)
+                dl = displayList
             }
 
-            val availableHeight = height - paddingBottom - paddingTop
-            // center things vertically
-            var eqheight = dl.ascent + dl.descent
-            if (eqheight < textSize / 2) {
-                // Set the height to the half the size of the font
-                eqheight = textSize / 2
+            if(dl != null) {
+
+                dl.textColor = this.fontColor
+                // Determine x position based on alignment
+                val textX = when (this.textAlignment) {
+                    KMTTextAlignmentLeft -> paddingLeft
+
+                    KMTTextAlignmentCenter ->
+                        (width - paddingLeft - paddingRight - dl.width.toInt()) / 2 + paddingLeft
+
+                    KMTTextAlignmentRight ->
+                        width - dl.width.toInt() - paddingRight
+                }
+
+                val availableHeight = height - paddingBottom - paddingTop
+                // center things vertically
+                var eqheight = dl.ascent + dl.descent
+                if (eqheight < textSize / 2) {
+                    // Set the height to the half the size of the font
+                    eqheight = textSize / 2
+                }
+                // This will put center of vertical bounds to vertical center
+                val textY = (availableHeight - eqheight) / 2 + dl.descent + paddingBottom
+                dl.position.x = textX.toFloat()
+                dl.position.y = textY
+                canvas.save()
+                canvas.translate(0.0f, height.toFloat())
+                canvas.scale(1.0f, -1.0f)
+                dl.draw(canvas)
+
+                canvas.restore()
             }
-            // This will put center of vertical bounds to vertical center
-            val textY = (availableHeight - eqheight) / 2 + dl.descent + paddingBottom
-            dl.position.x = textX.toFloat()
-            dl.position.y = textY
-            canvas.save()
-            canvas.translate(0.0f, height.toFloat())
-            canvas.scale(1.0f, -1.0f)
-            dl.draw(canvas)
-            canvas.restore()
         }
     }
 

@@ -48,7 +48,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="MathView 1"/>
+                            android:text="MathView 1"
+                            app:autoSizeTextType="uniform"/>
                         <com.taeim.mathdisplay.AndroidMathView
                             android:id="@+id/mathView1"
                             android:layout_width="match_parent"
@@ -65,10 +66,11 @@
                             android:text="MathView 2"/>
                         <com.taeim.mathdisplay.AndroidMathView
                             android:id="@+id/mathView2"
-                            android:layout_width="match_parent"
+                            android:layout_width="300dp"
                             android:layout_height="wrap_content"
                             app:fontSize="50sp"
                             app:fontType="TeXGyreTermes"
+                            app:autoSize="true"
                             app:textAlignment="center" />
 
                         <TextView

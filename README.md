@@ -4,6 +4,7 @@
 - This Project's cloned from https://github.com/gregcockroft/AndroidMath
 - Added some custom attributes for xml
 - Added some methods to set attributes for code
+- Added autoSize : If you want to use this attribute then set the layout_width. ex) layout_width="300dp"
 
 <img src="./img/phonescreen.png" width="320">
 
@@ -63,7 +64,7 @@ Add below lines to apps's build.gradle
 dependencies {
     ...
     
-    implementation 'com.github.javafa:AndroidMathView:1.0.15'
+    implementation 'com.github.javafa:AndroidMathView:1.0.18'
 }
 	
 ```
@@ -83,8 +84,9 @@ dependencies {
 
     <com.taeim.mathdisplay.AndroidMathView
         android:id="@+id/mathView2"
-        android:layout_width="match_parent"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
+        app:autoSize="true"
         app:fontSize="50sp"
         app:fontType="TeXGyreTermes"
         app:textAlignment="center" />
@@ -110,7 +112,8 @@ dependencies {
 | fontColor | Color | @color/colorId   
 | fontSize | Dimmension | 11sp   
 | fontType | Enum | LatinModernMath, TeXGyreTermes, XITSMath   
-| textAlignment | Enum | left, center, right   
+| textAlignment | Enum | left, center, right
+| autoSize | Boolean | false      
 
 ```kotlin
 class MainActivity:AppCompatActivity() {
@@ -138,7 +141,7 @@ class MainActivity:AppCompatActivity() {
 | setColorResource(@ColorRes colorId:Int) | Int | void | mathView2.setColorResource(R.color.colorPrimary)   
 | setColorString(color:String) | String | void | mathView3.setColorString("#5312f3")
 | setFontSize(dp:Float) | Float | void | mathView2.setFontSize(33.5f) 
-* not support setTextSize use setFontSize instead
+
 
 #### Credits:
 

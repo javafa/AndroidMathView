@@ -44,7 +44,7 @@ f(x) = \int\limits_{-\infty}^\infty\!\hat f(\xi)\,e^{2 \pi i \xi x}\,\mathrm{d}\
 \frak Q(\lambda,\hat{\lambda}) =  -\frac{1}{2} \mathbb P(O \mid \lambda ) \sum_s \sum_m \sum_t \gamma_m^{(s)} (t) +\\  \quad \left( \log(2 \pi ) + \log \left| \cal C_m^{(s)} \right| +  \left( o_t - \hat{\mu}_m^{(s)} \right) ^T \cal C_m^{(s)-1} \right)
 
 f(x) = \begin{cases} \frac{e^x}{2} & x \geq 0 \\ 1 & x < 0 \end{cases}
-    
+
 \color{#ff3333}{c}\color{#9933ff}{o}\color{#ff0080}{l}+\color{#99ff33}{\frac{\color{#ff99ff}{o}}{\color{#990099}{r}}}-\color{#33ffff}{\sqrt[\color{#3399ff}{e}]{\color{#3333ff}{d}}}
 
 
@@ -117,7 +117,7 @@ U_3^2UY_3^2U_3Y^2f_1f^2ff
 \underline{xyz}+\overline{abc}
 \underline{\frac12}+\overline{\frac34}
 \underline{x^\overline{y}_\overline{z}+5}
-    
+
 # spacing examples from the TeX book
 \int\!\!\!\int_D dx\,dy
 
@@ -125,7 +125,7 @@ U_3^2UY_3^2U_3Y^2f_1f^2ff
 \int\int_D dxdy
 y\,dx-x\,dy
 y dx - x dy
-    
+
 # large spaces
 hello\ from \quad the \qquad other\ side
 
@@ -136,7 +136,7 @@ hello\ from \quad the \qquad other\ side
 
 # large roots
 \sqrt{1+\sqrt{1+\sqrt{1+\sqrt{1+\sqrt{1+\cdots}}}}}
-    
+
 \begin{bmatrix} a & b\\ c & d \\ e & f \\ g &  h \\ i & j \end{bmatrix}
 x{\scriptstyle y}z
 x \mathrm x \mathbf x \mathcal X \mathfrak x \mathsf x \bm x \mathtt x \mathit \Lambda \cal g
