@@ -64,7 +64,7 @@ Add below lines to apps's build.gradle
 dependencies {
     ...
     
-    implementation 'com.github.javafa:AndroidMathView:1.0.18'
+    implementation 'com.github.javafa:AndroidMathView:1.0.19'
 }
 	
 ```
