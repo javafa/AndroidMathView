@@ -313,18 +313,7 @@ class AndroidMathView : View {
 
         if (dl != null) {
 
-            Log.d("매쓰뷰", "math size=${dl.width}, view size=${layoutParams.width}, dendity=${density} text=${latex}")
-
-            // auto-size
-            if(autoSize && dl.width > layoutParams.width && layoutParams.width > 0) {
-                val scale = dl.width / layoutParams.width
-                val resize = textSize / scale
-                Log.d("매쓰뷰", "textsize origin =${textSize}, resize=${resize}, scale=${scale}")
-                font = font!!.copyFontWithSize(resize)
-
-                displayList = MTTypesetter.createLineForMathList(ml!!, font!!, currentStyle)
-                dl = displayList
-            }
+            dl = applyAutoSize(dl, ml)
 
             if(dl != null) {
 
@@ -359,6 +348,20 @@ class AndroidMathView : View {
                 canvas.restore()
             }
         }
+    }
+
+    private fun applyAutoSize(dl:MTMathListDisplay, ml:MTMathList?) : MTMathListDisplay? {
+        if(autoSize) {
+            if(dl.width > layoutParams.width && layoutParams.width > 0) {
+                val scale = dl.width / layoutParams.width
+                val resize = textSize / scale
+                Log.d("매쓰뷰", "textsize origin =${textSize}, resize=${resize}, scale=${scale}")
+                font = font!!.copyFontWithSize(resize)
+                displayList = MTTypesetter.createLineForMathList(ml!!, font!!, currentStyle)
+                return displayList
+            }
+        }
+        return dl
     }
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
