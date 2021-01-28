@@ -5,6 +5,7 @@
 - Added some custom attributes for xml
 - Added some methods to set attributes for code
 - Added autoSize : If you want to use this attribute then set the layout_width. ex) layout_width="300dp"
+- applied android jetpack
 
 <img src="./img/phonescreen.png" width="320">
 
@@ -64,7 +65,7 @@ Add below lines to apps's build.gradle
 dependencies {
     ...
     
-    implementation 'com.github.javafa:AndroidMathView:1.0.19'
+    implementation 'com.github.javafa:AndroidMathView:1.0.20'
 }
 	
 ```
