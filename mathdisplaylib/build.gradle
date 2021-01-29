@@ -12,7 +12,7 @@ android {
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0.20"
+        versionName "1.0.21"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         sourceSets.test.resources.srcDirs += ["src/main"]
@@ -22,6 +22,7 @@ android {
                 version "3.6.0"
                 arguments "-Dcdep-dependencies_DIR=../../../.cdep/modules"
                 arguments "-DANDROID_STL=c++_shared"
+                arguments "-GAndroid Gradle - Ninja"
             }
         }
     }
@@ -32,6 +33,7 @@ android {
 //            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
     sourceSets {
         main {
             // let gradle pack the shared library into apk
@@ -39,11 +41,17 @@ android {
         }
     }
 
-    externalNativeBuild {
-        cmake {
-            version "3.6.0"
-            path 'src/main/cpp/CMakeLists.txt'
-        }
+//    externalNativeBuild {
+//        cmake {
+//            version "3.6.0"
+//            path 'src/main/cpp/CMakeLists.txt'
+//        }
+//    }
+
+    def ndkDir = project.android.ndkDirectory
+    if (ndkDir != null && !ndkDir.toString().isEmpty()) {
+        externalNativeBuild.cmake.version = "3.6.0"
+        externalNativeBuild.cmake.path = 'src/main/cpp/CMakeLists.txt'
     }
 
     compileOptions {
@@ -62,6 +70,10 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
 //    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
