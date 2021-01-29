@@ -2,8 +2,6 @@ package com.taeim.mathdisplay;
 
 import android.Manifest
 import android.content.Context
-import android.support.test.InstrumentationRegistry
-import android.support.test.runner.AndroidJUnit4
 import com.taeim.mathdisplay.parse.*
 import com.taeim.mathdisplay.render.*
 import com.taeim.mathdisplay.render.MTTypesetter
@@ -19,7 +17,6 @@ import android.graphics.Paint
 import android.os.Environment
 import java.io.FileOutputStream
 import java.io.IOException
-import android.support.test.rule.GrantPermissionRule
 import com.taeim.mathdisplay.render.MTCodepointChar
 import org.junit.Rule
 

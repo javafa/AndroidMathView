@@ -63,8 +63,8 @@ open class MTDisplay(open var ascent: Float = 0.0f, open var descent: Float = 0.
     }
 
     open fun colorChanged() {
-    }
 
+    }
 
     open fun draw(canvas: Canvas) {
         if (DEBUG) {
