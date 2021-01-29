@@ -13,6 +13,8 @@
 /* --- Helper functions --- */
 /* fuck up */
 
+extern "C" {
+
 JNIEXPORT jobject JNICALL
 Java_com_pvporbit_freetype_Utils_newBuffer(JNIEnv *env, jclass obj, jint size) {
     return env->NewDirectByteBuffer((char *) malloc(size), size);
@@ -325,7 +327,7 @@ Java_com_pvporbit_freetype_FreeType_FT_1GlyphSlot_1Get_1advance(JNIEnv *env, jcl
 
     jclass cls = env->FindClass("com/pvporbit/freetype/GlyphSlot$Advance");
     jmethodID methodID = env->GetMethodID(cls, "<init>", "(II)V");
-    jobject a = env->NewObject(cls, methodID, (jlong) vector.x, (jlong) vector.y);
+    jobject a = env->NewObject(cls, methodID, (jint) vector.x, (jint) vector.y);
     return a;
 }
 
@@ -582,4 +584,6 @@ Java_com_pvporbit_freetype_FreeType_FT_1Face_1Get_1Kerning(JNIEnv *env, jclass o
     jmethodID methodID = env->GetMethodID(cls, "<init>", "(II)V");
     jobject a = env->NewObject(cls, methodID, x, y);
     return a;
+}
+
 }
