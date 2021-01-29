@@ -5,7 +5,8 @@
 - Added some custom attributes for xml
 - Added some methods to set attributes for code
 - Added autoSize : If you want to use this attribute then set the layout_width. ex) layout_width="300dp"
-- applied android jetpack
+- Applied android jetpack
+- Solved ndk errors on some cpu architectures 
 
 <img src="./img/phonescreen.png" width="320">
 
