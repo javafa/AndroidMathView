@@ -2,11 +2,11 @@
 
 # AndroidMathView
 - This Project's cloned from https://github.com/gregcockroft/AndroidMath   
-- [DEC/17/2020] Added some custom attributes for xml   
-- [DEC/18/2021] Added some methods to set attributes for code   
-- [JAN/07/2021] Added autoSize : If you want to use this attribute then set the layout_width. ex) layout_width="300dp"   
-- [JAN/27/2021] Applied android jetpack   
-- [JAN/29/2021] Solved ndk errors on some cpu architectures on the release apk   
+- [17/DEC/2020] Added some custom attributes for xml   
+- [18/DEC/2021] Added some methods to set attributes for code   
+- [07/JAN/2021] Added autoSize : If you want to use this attribute then set the layout_width. ex) layout_width="300dp"   
+- [27/JAN/2021] Applied android jetpack   
+- [29/JAN/2021] Solved ndk errors on some cpu architectures on the release apk   
 <img src="./img/phonescreen.png" width="320">
 
 
