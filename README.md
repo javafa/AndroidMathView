@@ -166,7 +166,7 @@ related projects:
 
 ## License
 
-AndroidMath is available under the MIT license. See the [LICENSE](./LICENSE)
+AndroidMathView is available under the MIT license. See the [LICENSE](./LICENSE)
 file for more info.
 
 
